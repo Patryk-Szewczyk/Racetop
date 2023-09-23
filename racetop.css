@@ -628,7 +628,7 @@ body {
         .masonry-layout-box-mobile {
             max-width: 570px;
             height: auto;
-            margin: 50px;
+            margin: 50px 30px;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
