@@ -860,11 +860,13 @@ const desktop_SlideAnimations = {
                 const img_Desktop_box_CSS_Obj = [];
                 let userPagePos = window.scrollY;
                 let newVal = [];
-                // Setting only NOT modifed sliding values
+                // Setting only NOT modifed sliding values | Right
                 for (let i = 0; i < img_Desktop_box.length; i++) {
                     if (userPagePos >= this.slideStart_Array[i]) {
-                        newVal[i] = userPagePos - this.slideStart_Array[i];
-                        newVal[i] = ((0.5 * newVal[i]) / 2);   // Patrykowy wzór na dobre przesówanie obazów   // old: 0.4 (-lub)
+                        newVal[0] = userPagePos - this.slideStart_Array[i];
+                        newVal[0] = ((0.5 * newVal[i]) / 2);   // Patrykowy wzór na dobre przesówanie obazów   // old: 0.4 (-lub)
+                        newVal[1] = userPagePos - this.slideStart_Array[i];
+                        newVal[1] = ((0.5 * newVal[i]) / 2);   // Patrykowy wzór na dobre przesówanie obazów   // old: 0.4 (-lub)
                         //console.log('NEW VAL TO SLID ' + Number(i + 1) + ' : ' + newVal[i]);
                     } else {}
                 }
@@ -888,28 +890,49 @@ const desktop_SlideAnimations = {
                         img_Desktop_box_CSS_Val = String(img_Desktop_box_CSS_Val).slice(0, -2);
                         img_Desktop_box_CSS_Val = Number(img_Desktop_box_CSS_Val);
                         // Img block - right:
-                        let img_Desktop_box_CSS_Right = img_Desktop_box_CSS_Obj[i].getPropertyValue('right');
-                        img_Desktop_box_CSS_Right = String(img_Desktop_box_CSS_Right).slice(0, -2);
-                        img_Desktop_box_CSS_Right = Number(img_Desktop_box_CSS_Right);
+                        for (let j = 0; j < img_Desktop_box.length; j+=2) {
+                            img_Desktop_box_CSS_Obj[j] = window.getComputedStyle(img_Desktop_box[j], null);
+                            let img_Desktop_box_CSS_Right = img_Desktop_box_CSS_Obj[j].getPropertyValue('right');
+                            img_Desktop_box_CSS_Right = String(img_Desktop_box_CSS_Right).slice(0, -2);
+                            img_Desktop_box_CSS_Right = Number(img_Desktop_box_CSS_Right);
+                        }
                         // Slide box width:   // limit of proper image position change
-                        let slideBoxWidth = sld_Desktop_box_CSS_Val - text_Desktop_box_CSS_Val;
-                        //console.log(`Slide box width: ${slideBoxWidth}`);
-                        // Img box space:   // area of proper image position change
-                        let imgBoxSpace = sld_Desktop_box_CSS_Val - img_Desktop_box_CSS_Val;
-                        //console.log(`Img box space: ${imgBoxSpace}`);     
+                        let slideBoxWidth_Right = sld_Desktop_box_CSS_Val - text_Desktop_box_CSS_Val;
+                        //console.log(`Slide box width: ${slideBoxWidth_Right}`);
+                        // Img block - left:
+                        for (let j = 1; j < img_Desktop_box.length; j+=2) {
+                            img_Desktop_box_CSS_Obj[j] = window.getComputedStyle(img_Desktop_box[j], null);
+                            let img_Desktop_box_CSS_Left = img_Desktop_box_CSS_Obj[j].getPropertyValue('left');
+                            img_Desktop_box_CSS_Left = String(img_Desktop_box_CSS_Left).slice(0, -2);
+                            img_Desktop_box_CSS_Left = Number(img_Desktop_box_CSS_Left);
+                        }
+                        // Slide box width:   // limit of proper image position change
+                        let slideBoxWidth_Left = sld_Desktop_box_CSS_Val - text_Desktop_box_CSS_Val;
                         // Finally calculations and sliding:
                         // Img block - width:
                         let img_Desktop_box_CSS_Width = img_Desktop_box_CSS_Obj[i].getPropertyValue('width');
                         img_Desktop_box_CSS_Width = String(img_Desktop_box_CSS_Width).slice(0, -2);
                         img_Desktop_box_CSS_Width = Number(img_Desktop_box_CSS_Width);
                         let toLimitVal = newVal[i] + img_Desktop_box_CSS_Width;
-                        if (toLimitVal >= slideBoxWidth) {   // NIE DZIAŁA! NAPRAW TO!
-                            //newVal[i] = newVal[i] * 0;
+                        if (toLimitVal >= slideBoxWidth_Right) {   // NIE DZIAŁA! NAPRAW TO!
                             // Img block - right:
-                            let img_Desktop_box_CSS_Right = img_Desktop_box_CSS_Obj[i].getPropertyValue('right');
-                            img_Desktop_box_CSS_Right = String(img_Desktop_box_CSS_Right).slice(0, -2);
-                            img_Desktop_box_CSS_Right = Number(img_Desktop_box_CSS_Right);
-                            newVal[i] = img_Desktop_box_CSS_Right;
+                            for (let j = 0; j < img_Desktop_box.length; j+=2) {
+                                img_Desktop_box_CSS_Obj[j] = window.getComputedStyle(img_Desktop_box[j], null);
+                                let img_Desktop_box_CSS_Right = img_Desktop_box_CSS_Obj[j].getPropertyValue('right');
+                                img_Desktop_box_CSS_Right = String(img_Desktop_box_CSS_Right).slice(0, -2);
+                                img_Desktop_box_CSS_Right = Number(img_Desktop_box_CSS_Right);
+                                newVal[j] = img_Desktop_box_CSS_Right;
+                            };
+                        } else {}
+                        if (toLimitVal >= slideBoxWidth_Left) {   // NIE DZIAŁA! NAPRAW TO!
+                            // Img block - left:
+                            for (let j = 1; j < img_Desktop_box.length; j+=2) {
+                                img_Desktop_box_CSS_Obj[j] = window.getComputedStyle(img_Desktop_box[j], null);
+                                let img_Desktop_box_CSS_Left = img_Desktop_box_CSS_Obj[j].getPropertyValue('left');
+                                img_Desktop_box_CSS_Left = String(img_Desktop_box_CSS_Left).slice(0, -2);
+                                img_Desktop_box_CSS_Left = Number(img_Desktop_box_CSS_Left);
+                                newVal[j] = img_Desktop_box_CSS_Left;
+                            };
                         } else {}
                         //console.log('WARUNEK' + (newVal[i] >= slideBoxWidth));
                         if (newVal[i] == undefined) {
@@ -1062,24 +1085,27 @@ const masonryLayout_Obj = {
                 if (el <= topNewsAmount) {
                     let mslEl_Target = this.mslBoxMobile.children[0];
                     const mslEL_Body = document.createElement('div');
-                    const mslEL_Tit = document.createElement('div');
-                    const mslEL_Tit_TextNode = document.createTextNode(content_Database.cD_Title[m]);
+                    const mslEl_BodyBorder = document.createElement('div');
                     const mslEL_ImgDim = document.createElement('div');
                     const mslEL_ImgPrp = document.createElement('img');
+                    const mslEL_Tit = document.createElement('div');
+                    const mslEL_Tit_TextNode = document.createTextNode(content_Database.cD_Title[m]);
                     const mslEL_Desc = document.createElement('div');
                     const mslEL_Desc_TextNode = document.createTextNode(content_Database.cD_Description[m]);
                     mslEL_Body.setAttribute('class', 'msl-body-mobile');
-                    mslEL_Tit.setAttribute('class', 'msl-tit');
+                    mslEl_BodyBorder.setAttribute('class', 'msl-body-border-mobile');
                     mslEL_ImgDim.setAttribute('class', 'msl-img-dim');
                     mslEL_ImgPrp.setAttribute('class', 'msl-img-prp');
+                    mslEL_Tit.setAttribute('class', 'msl-tit');
                     mslEL_Desc.setAttribute('class', 'msl-desc');
                     mslEL_Tit.appendChild(mslEL_Tit_TextNode);
                     mslEL_ImgPrp.setAttribute('src', 'topNews_images/img_' + (m + 1) + '.jpg');
                     mslEL_ImgDim.appendChild(mslEL_ImgPrp);
                     mslEL_Desc.appendChild(mslEL_Desc_TextNode);
-                    mslEL_Body.appendChild(mslEL_Tit);
-                    mslEL_Body.appendChild(mslEL_ImgDim);
-                    mslEL_Body.appendChild(mslEL_Desc);
+                    mslEl_BodyBorder.appendChild(mslEL_ImgDim);
+                    mslEl_BodyBorder.appendChild(mslEL_Tit);
+                    mslEl_BodyBorder.appendChild(mslEL_Desc);
+                    mslEL_Body.appendChild(mslEl_BodyBorder);
                     mslEl_Target.appendChild(mslEL_Body);
                 }
                 else {}
@@ -1125,24 +1151,27 @@ const masonryLayout_Obj = {
                         } else {}
                     }
                     const mslEL_Body = document.createElement('div');
-                    const mslEL_Tit = document.createElement('div');
-                    const mslEL_Tit_TextNode = document.createTextNode(content_Database.cD_Title[m]);
+                    const mslEl_BodyBorder = document.createElement('div');
                     const mslEL_ImgDim = document.createElement('div');
                     const mslEL_ImgPrp = document.createElement('img');
+                    const mslEL_Tit = document.createElement('div');
+                    const mslEL_Tit_TextNode = document.createTextNode(content_Database.cD_Title[m]);
                     const mslEL_Desc = document.createElement('div');
                     const mslEL_Desc_TextNode = document.createTextNode(content_Database.cD_Description[m]);
                     mslEL_Body.setAttribute('class', 'msl-body-desktop');
-                    mslEL_Tit.setAttribute('class', 'msl-tit');
+                    mslEl_BodyBorder.setAttribute('class', 'msl-body-border-desktop');
                     mslEL_ImgDim.setAttribute('class', 'msl-img-dim');
                     mslEL_ImgPrp.setAttribute('class', 'msl-img-prp');
+                    mslEL_Tit.setAttribute('class', 'msl-tit');
                     mslEL_Desc.setAttribute('class', 'msl-desc');
                     mslEL_Tit.appendChild(mslEL_Tit_TextNode);
                     mslEL_ImgPrp.setAttribute('src', 'topNews_images/img_' + (m + 1) + '.jpg');
                     mslEL_ImgDim.appendChild(mslEL_ImgPrp);
                     mslEL_Desc.appendChild(mslEL_Desc_TextNode);
-                    mslEL_Body.appendChild(mslEL_Tit);
-                    mslEL_Body.appendChild(mslEL_ImgDim);
-                    mslEL_Body.appendChild(mslEL_Desc);
+                    mslEl_BodyBorder.appendChild(mslEL_ImgDim);
+                    mslEl_BodyBorder.appendChild(mslEL_Tit);
+                    mslEl_BodyBorder.appendChild(mslEL_Desc);
+                    mslEL_Body.appendChild(mslEl_BodyBorder);
                     // Wkładanie danych do najniższej kolumny:
                     mslEl_Target.appendChild(mslEL_Body);
                 } else {}
