@@ -1,6 +1,3 @@
-import TopNewsModule from './data.js';
-console.log(TopNewsModule);
-
 'use strict'
 
 
@@ -1057,7 +1054,7 @@ const masonryLayout_Obj = {
     },
     putInContent() {
         if (toGlobalData_Obj.webRWD_Val_Current < toGlobalData_Obj.webRWD_Val_Target) {
-            let topNewsAmount = TopNewsModule.TopNewsModule.cD_Title.length;
+            let topNewsAmount = content_Database.cD_Title.length;
             for (let m = 0; m < topNewsAmount; m++) {
                 this.checkHeight();
                 this.fill_masLayCol_Height();
@@ -1066,11 +1063,11 @@ const masonryLayout_Obj = {
                     let mslEl_Target = this.mslBoxMobile.children[0];
                     const mslEL_Body = document.createElement('div');
                     const mslEL_Tit = document.createElement('div');
-                    const mslEL_Tit_TextNode = document.createTextNode(TopNewsModule.TopNewsModule.cD_Title[m]);
+                    const mslEL_Tit_TextNode = document.createTextNode(content_Database.cD_Title[m]);
                     const mslEL_ImgDim = document.createElement('div');
                     const mslEL_ImgPrp = document.createElement('img');
                     const mslEL_Desc = document.createElement('div');
-                    const mslEL_Desc_TextNode = document.createTextNode(TopNewsModule.TopNewsModule.cD_Description[m]);
+                    const mslEL_Desc_TextNode = document.createTextNode(content_Database.cD_Description[m]);
                     mslEL_Body.setAttribute('class', 'msl-body-mobile');
                     mslEL_Tit.setAttribute('class', 'msl-tit');
                     mslEL_ImgDim.setAttribute('class', 'msl-img-dim');
@@ -1088,7 +1085,7 @@ const masonryLayout_Obj = {
                 else {}
             }
         } else if (toGlobalData_Obj.webRWD_Val_Current >= toGlobalData_Obj.webRWD_Val_Target) {
-            let topNewsAmount = TopNewsModule.TopNewsModule.cD_Title.length;
+            let topNewsAmount = content_Database.cD_Title.length;
             for (let m = 0; m < topNewsAmount; m++) {
                 this.checkHeight();
                 this.fill_masLayCol_Height();
@@ -1129,11 +1126,11 @@ const masonryLayout_Obj = {
                     }
                     const mslEL_Body = document.createElement('div');
                     const mslEL_Tit = document.createElement('div');
-                    const mslEL_Tit_TextNode = document.createTextNode(TopNewsModule.TopNewsModule.cD_Title[m]);
+                    const mslEL_Tit_TextNode = document.createTextNode(content_Database.cD_Title[m]);
                     const mslEL_ImgDim = document.createElement('div');
                     const mslEL_ImgPrp = document.createElement('img');
                     const mslEL_Desc = document.createElement('div');
-                    const mslEL_Desc_TextNode = document.createTextNode(TopNewsModule.TopNewsModule.cD_Description[m]);
+                    const mslEL_Desc_TextNode = document.createTextNode(content_Database.cD_Description[m]);
                     mslEL_Body.setAttribute('class', 'msl-body-desktop');
                     mslEL_Tit.setAttribute('class', 'msl-tit');
                     mslEL_ImgDim.setAttribute('class', 'msl-img-dim');
