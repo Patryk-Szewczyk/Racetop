@@ -36,7 +36,3 @@ let content_Database = {
         /*016*/'Intel przyzwyczaił nas do tego, że lubi mieszać w swojej ofercie procesorów. Tym razem szykuje się do debiutu jednostki, która pod względem specyfikacji trochę nie przystaje do 2023 r. Zobaczmy, czym jest Intel 300 i dlaczego może stać się bardzo popularną jednostką w tańszych komputerach.'
     ]
 };
-
-export default {
-    TopNewsModule: content_Database
-};
