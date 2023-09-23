@@ -1,0 +1,42 @@
+let content_Database = {
+    cD_Title: [
+        /*001*/'Znaleziono wrak Titana. W środku ludzkie szczątki',
+        /*002*/'Tragiczny finał zabawy z niedźwiedziem',
+        /*003*/'Arab zgubił się w Biedronce',
+        /*004*/'Borowiki Szatańskie znowu atakują',
+        /*005*/'Space X idzie ostro do przodu',
+        /*006*/'"O dwóch takich co świeżaki ukradli" - trafi jutro do kin',
+        /*007*/'Na tropie Złotego Pociągu',
+        /*008*/'W Radomiu wybudowano stocznię. Przypłynął już pierwszy statek',
+        /*009*/'Nadchodzi duże tąpnięcie w pogodzie. Zrobi się nawet o 15 st. C chłodniej. Wiemy do kiedy potrwa fala upałów',
+        /*010*/'Poznaj te języki programowania, a twój mózg wybuchnie',
+        /*011*/'Smaczne dania w 5 minut',
+        /*012*/'Poszedł do lekarza. Lekarz odesłał go, bo był sierotą, a on lekarzem rodzinnym',
+        /*013*/'Amerykanie przekopali się do Chin',
+        /*014*/'Od 40 lat kłóci się z transformatorem energetycznym',
+        /*015*/'Naukowcy odkryli Bursztynową Komnatę',
+        /*016*/'Intel pracuje nad dziwnym procesorem. Jego specyfikacja może szokować'
+    ],
+    cD_Description: [
+        /*001*/'Amerykańska Straż Przybrzeżna podała nowe informacje dotyczące katastrofy łodzi podwodnej Titan. "Prawdopodobnie odzyskaliśmy ludzkie szczątki" - podały służby w opublikowanym w środę komunikacie.',
+        /*002*/'Rosjanie bawili się z niedźwiedziem, wskakując na niego, przypłacili życiem, gdyż niedżwieź zabił ich.',
+        /*003*/'W piątek wieczorem doszło do niecodziennego zdarzenia. Arab zgubił się w Biedronce. Na miejsce wezwano 3 zastepy straży pożarnej. Poszukiwania trwają już 3 dni, a Araba nadal nie odnaleziono. Wszystkie służby są w wyjątkowej gotowości i nieustannie szukają nowych tropów.',
+        /*004*/'W zeszłym tygodniu dwójka grzybiarz została zaatakowana przez ogromnego półtorametrowego Borowika Szatańskiego. Przerażeni grzybiarze cudem uciekli i uniknęli śmierci. Na miejsce wezwano policję. Policja otoczyła teren i wezwała ekspertów od grzybów. Na podstawie badań terenowych grzybiarze ustalili, że niedalego drogi pojawiło się podziemne gniazdo Borowików Szatańskich, z którego co kawałek wychodzi Borowik Szatański. Eksperci natychmiast skontaktowali się z wojskiem, w celu zlikwidowania zabójczych grzybów. Wojsko otoczyło już teren Kozienickiego Parku Krajobrazowego i dzisiaj po południu zacznie się eksterminacja Szatanów.',
+        /*005*/'Space X wróciło właśnie z Marsa. Naukowcy są tym wielce podekscytowani. Planują podobno lot na Wenus za 3 lata.',
+        /*006*/'Maniek i Franek - dwóch absolwentów Akademi Chlania Nauk Alkoholicznych (ACNA), planuje skok na sklep ze świerzkami. Czy uda im się zrealizować to idyliczne marzenie?',
+        /*007*/'Polscy naukowcy z uniwersytetu ZP (Zjawisk Paranolamalnych) odkryli w amazońskiej dżungli rzekomo tajną mapę Adolfa Hitlera, która ma prowadzić do tunelu w którym spoczywa Złoty Pociąg. Ekeperci ci udali się więc tam. Na miejscu spostrzegli, że znajduje się przed nimi fabryka broni chemicznej. Panowi weszzli tam i postanowili zbadać teren fabryki. W środku znaleźli trzy tunele nieznanego pochodzenie. Jeden dla łodzi podwodnych, jeden dla czołgów i jeden dla pociągów. Weszli do tego dla pociągów i po 2 godzinach wędrówki zauważyli światło. Profesorowie zorientowali się, że w ich stonę jedzeie pociąg. Wystraszeni, zaczęli uciekać. Z każdą sekundą światło było coraz bliżej nich, aż niebawem usłyszeli przreźliwy dźwięk XX wiecznej lokomotywy. Jeden z badaczy odwrócił się i osłupiał ze strachu. "To złoty pociąg!" - krzyknął i chwilę później upadł na ziemię. Kilka sekund  później słychać było trzaśnięcie i dźwięk przecinanego mięsa. Kolega wiedział, że jego kompan został zabity przez nazistowską machinę śmierci. Kolega dostrzegł niebawem granatnik z pociskami kalibru 120mm. Wziął go, włożył pocisk i wycelował pod spód pociągu i wysztelił. Za kawałek było słychć BUM, TRZASK i PRACH. Złoty Pociąg stanął w płomieniach, a kolega wycelował w jego kabinę po czym strzelił i trafił rozrywając ją na strzępy i niszcząc złoty pociąg. Po tej krwawej walce kolega podszedł do ciala bestii i zaczał ją badać. Po 10 minutach oględzin, kolega dostrzegł, że coś rusza się między wagonami. Przerażony kolega, naładował granatnik i poszed w kierunku tego straszydła. Kiedy cień urósł i przybrał kształtu kolega skierował na niego swoją latarkę i prawie umarł ze strachu - to... to ten kolejarz z sąsiedniego bloku z pokoju 49, co zeszłego tygodnia zaginął podczas podróży najdłuższym tunelem na świecie, mającym ponad 97 km długości... Przygoda ze Złotym Pociągiem skończyła się prawie "Happy End\'em", gdyż ów pociąg okazał się starym pociągiem towarowym, który miał zostać oddany na złom. Kolejarz wybrał się nim na ów złomowisko, ale z uwagi, iż miał na to tylko 3 godziny, postanowił pojechać na skróty ów tunelem, aby wyjechać przez fabrykę do złomowiska naprzeciw. Podaczs podróży miał problemy z hamulacmi, przez co musiał je naprawić przy każdym wagonie i samej lokomotywie, co pozostawiło go w tunelu przez ponad 2 dni. Kiedy zobaczył kolegów, nie mógł wychamować, gdyż hamulce znowu się popsuły, tyle, że tym razem, nie chciały zaciskać tarcz.',
+        /*008*/'W Radomiu ukończono budowę stoczni. Przypłynął do niej pierwszy okręt z Laponii, kraju Świętego Mikołaja z prezentami w postaci dwóch tysięcy butelek "Zbyszko - 3 cytryny". Dodatkowo na statku zauważyć można było agentów kaczkowego patrolu - Kaczyńskiego, Kaczora Donalda, Donalda Tuska i Donalda Trumpa, chroniących prezenty przed legendarną "Chytrą babą z Radomia", która w zeszlym roku ukradła 37 butelek Mirindy',
+        /*009*/'Po chłodnej i wilgotnej pierwszej dekadzie sierpnia obecnie lato w Polsce rozkręciło się na dobre i uderzyło z wielką mocą. Obecnie przeżywamy najcieplejszy okres w tym roku i wszystko wskazuje na to, że szybko się on nie skończy. Przed nami bowiem jeszcze ok. tydzień męczącego upału, podczas którego temperatura niejednokrotnie przekroczy 30 st. C, ale w prognozach widać też drastyczne ochłodzenie i temperatury nawet o 15 st. C niższe niż obecnie.',
+        /*010*/'Brainfuck, INTERCAL, COW, Whitespace i Malbolge, czyli 5 najtrudniejszych języków programowania na świecie.',
+        /*011*/'Gorfy, Frytki, Zapikanki, Pizza - smakuje ci to, ale chciałbyć coś szybszego w przygotowaniu? Z nami na pewno osiągniesz ten cel!',
+        /*012*/'Chłopiec poszedł do lekarza, a lekarz go nie zbadał, bo był sierotą, a on lekarzem rodzinnym. Dostał 2 lata pozbawienia wolności. W jednej z Łódzkich przychodni doszło do okrutnego zdarzenia. Do gabinetu lekarskiego tak jak każdy normalny pacjent wszedł dwunastolatek. Chłopak miał powiedzieć lekarzowi, że bardzo boli go gardło i ma duszności. Lekarz zamiast natychmiast obejrzeć chłopca, zapytał się go czy ma rodzinę. Chłopiec odrzekł, że nie, dodając, że jest sierotą. Po tej deklaracji lekarz miał odprowadzić chłopca za drzwi, wyjaśniając, że jest lekarzem rodzinnym i z tego powodu jest w stanie leczyć tylko osoby, które mają rodzinę. Chłopiec nie dał za wygraną i zadzwonił na policję. Policja pojmała złego lekarza i przetransportowała go na komisariat. Lekarz dostał 2 lata pozbawienia wolności.',
+        /*013*/'Amerkanie chcięli przekopać się do Chin dla jaj. Zrobili to, ale naruszyli jądro ziemi, w związku z czy z jej wnętrza eksplodował srumień lawy. Naukowcy szacują, że ludzkość zostanie zniszona za 2 miesiące.',
+        /*014*/'Głucha babka pozwała do sądu transformator energetyczny, że ten okrada ją z pieniędy. Trnasformator wybronił się z zarzutów twierdząc, iż babka jest ślepa i przyśniło jej się to. Całą sprawę bada prokuratura.',
+        /*015*/'Naukowcy odkryli Bursztynową Komnatę. Znaleźli ją w hotelu w Zwoleniu przy "Alejce". Bursztynowa Komnata zachowała się w około 80%. Całe wyposażenie zostanie przewiezione do Warszawy.',
+        /*016*/'Intel przyzwyczaił nas do tego, że lubi mieszać w swojej ofercie procesorów. Tym razem szykuje się do debiutu jednostki, która pod względem specyfikacji trochę nie przystaje do 2023 r. Zobaczmy, czym jest Intel 300 i dlaczego może stać się bardzo popularną jednostką w tańszych komputerach.'
+    ]
+};
+
+export default {
+    TopNewsModule: content_Database
+};
