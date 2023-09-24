@@ -665,7 +665,7 @@ body {
                 .msl-body-mobile {
                     width: 100%;
                     height: auto;
-                    padding: 0px 0px 40px 0px;   /*OLD: 0px 20px 40px 20px*/
+                    padding: 0px 20px 40px;   /*OLD: 0px 20px 40px*/
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -789,14 +789,14 @@ body {
                         background-repeat: no-repeat;
                         background-size: 100% 100%;
                         background-position: center;
-                        filter: brightness(50%);
+                        filter: brightness(60%);
                     }
                     .oclp-2 {
                         background-image: url(images/townscape-5594386_1280.jpg);
                         background-repeat: no-repeat;
                         background-size: 100% 100%;
                         background-position: center;
-                        filter: brightness(50%);
+                        filter: brightness(60%);
                     }
                     .once-contact-mobile-locality-dim:hover .once-contact-mobile-locality-prp {
                         background-size: 110% 110%;
