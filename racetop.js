@@ -729,7 +729,7 @@ const mobile_CatBlocksAnimations = {
         ['load', 'scroll'].forEach((ev) => {
             window.addEventListener(ev, () => {
                 this.userScrVal = window.scrollY;
-                //console.log(this.userScrVal);
+                console.log('User screen location: ' + this.userScrVal);   /*User screen location*/
                 //console.log(this.userScrVal >= 1500);   //Test
                 for (let i = 200, j = 0; j < this.catEl_Mobile_Amount; i+=this.var_i_incr_val, j++) {
                     if (this.userScrVal >= i) {
