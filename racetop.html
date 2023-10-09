@@ -1,484 +1,138 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" lang="pl-PL" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-        <title>Racetop</title>
-        <link rel="stylesheet" href="racetop.css" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color">
+    <meta name="description" content="main page with most important things as well as products">
+    <title>House Bay</title>
+    <link rel="icon" type="image/x-icon" href="hb-images-favicon/building-148837_640.png" />
+    <link rel="stylesheet" href="housebay.css" type="text/css" />
+</head>
+<body>
+    <div id="splash-screen">ładowanie</div>
+    <div class="window-block">
+        <nav class="navbar-box">
+            <div class="navbar-mobile-content-box">
+                <div class="navbar-mobile-content-box-childHanger">
+                    <div class="page-logo-box">
+                        <div class="page-logo-proper"></div>
+                    </div>
+                    <div class="page-title-box">
+                        <div class="page-title-proper">
+                            <div class="pgTitPrp-color-word">house</div>
+                            <div class="pgTitPrp-normal-word">bay</div>
+                        </div>
+                    </div>
+                    <div class="page-dropdown-button-box">
+                        <div class="page-dropdown-button-proper">
+                            <div class="but-strip bs-top"></div>
+                            <div class="but-strip bs-center"></div>
+                            <div class="but-strip bs-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-mobile-content-proper">
+                    <div class="navbar-mobile-button-group">
+                        <div class="navbar-mobile-button-proper">home</div>
+                        <div class="navbar-mobile-button-proper">about</div>
+                        <div class="navbar-mobile-button-proper">services</div>
+                        <div class="navbar-mobile-button-proper">portfolio</div>
+                        <div class="navbar-mobile-button-proper">team</div>
+                        <div class="navbar-mobile-button-proper">contact</div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-desktop-content-hanger">
+                <div class="navbar-desktop-content">
+                    <div class="page-logo-box">
+                        <div class="page-logo-proper"></div>
+                    </div>
+                    <div class="page-desktop-title-box">
+                        <div class="page-title-proper">
+                            <div class="pgTitPrp-color-word">house</div>
+                            <div class="pgTitPrp-normal-word">bay</div>
+                        </div>
+                    </div>
+                    <div class="page-desktop-button-group">
+                        <div class="page-desktop-button">
+                            <div class="pgDskBut-background"></div>
+                            <div class="pgDskBut-text">home</div>
+                        </div>
+                        <div class="page-desktop-button">
+                            <div class="pgDskBut-background"></div>
+                            <div class="pgDskBut-text">about</div>
+                        </div>
+                        <div class="page-desktop-button">
+                            <div class="pgDskBut-background"></div>
+                            <div class="pgDskBut-text">services</div>
+                        </div>
+                        <div class="page-desktop-button">
+                            <div class="pgDskBut-background"></div>
+                            <div class="pgDskBut-text">portfolio</div>
+                        </div>
+                        <div class="page-desktop-button">
+                            <div class="pgDskBut-background"></div>
+                            <div class="pgDskBut-text">team</div>
+                        </div>
+                        <div class="page-desktop-button">
+                            <div class="pgDskBut-background"></div>
+                            <div class="pgDskBut-text">contact</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="img-slider-body">
+        </div>
+        <div class="img-slider-control-box">
+            <div class="iscb-leftArrow-box">
+                <div class="iscb-leftArrow-cover"></div>
+                <div class="iscb-leftArrow-proper"><</div>
+            </div>
+            <div class="iscb-info-box">
+                <div class="iscb-ib-text">
+                    <!--Blok na tekst stały względem przerzucania slajdów-->
+                </div>
+                <div class="iscb-ib-img-state">
+                    <div class="iscb-ib-is-group-box"></div>
+                </div>
+            </div>
+            <div class="iscb-rightArrow-box">
+                <div class="iscb-rightArrow-cover"></div>
+                <div class="iscb-rightArrow-proper">></div>
+            </div>
+        </div>
+    </div>
+    <div class="content-block-space">
 
-        <div class="background-box">
-            <img class="background-img" />
-            <div class="bgBox-mobile-content">   <!--MOBILE_>>>-->
-                <div class="bgBC-mobile-content-topTitle">racetop</div>
-                <div class="bgBC-mobile-content-topSubTitleInfo">Topowy serwis informacyjny o wyścigach</div>
-                <div class="bgBC-mobile-arrow-box-handler">
-                    <div class="bgBC-mobile-arrow-proper bgBC-aWpr-0">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </div>
-                    <div class="bgBC-mobile-arrow-proper bgBC-aWpr-1">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </div>
-                    <div class="bgBC-mobile-arrow-proper bgBC-aWpr-2">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
+        <div class="product-slider-infoTitle">Look ours the newest offers</div>
+        <div class="product-slider-area">
+            <div class="product-slider-status-box">
+                <!--<div class="ps-status-ball"></div>-->
+            </div>
+            <div class="product-slider-box">
+                <div class="product-slider-arrowBox-left-box">
+                    <div class="ps-arrowBox-bcg">
+                        <div class="ps-arrowBox-fillBox-left"></div>
+                        <div class="ps-arrowBox-content-left"><</div>
                     </div>
                 </div>
-            </div>   <!--<<<_MOBILE-->
-            <div class="bgBox-topMenu">   <!--MOBILE_>>>-->
-                <div class="topMenu-logo-box">
-                    <div class="topMenu-logo-dim">
-                       <img class="topMenu-logo-img" src="images/race-car-309123_640.png" />
+                <div class="product-slider-arrowBox-right-box">
+                    <div class="ps-arrowBox-bcg">
+                        <div class="ps-arrowBox-fillBox-right"></div>
+                        <div class="ps-arrowBox-content-right">></div>
                     </div>
                 </div>
-                <div class="topMenu-title-box">
-                    <div class="topMenu-page-Title-handler">
-                        <div class="topMenu-pageTitle">racetop</div>
-                    </div>
-                    <div class="tM-menu-title-dim">
-                        <div class="tM-menu-title">menu</div>
-                    </div>
-                    <div class="tM-menu-linkButtons-group">
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">wiadomości</div>
-                        </div>
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">formuła&nbsp;1</div>
-                        </div>
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">indycar</div>
-                        </div>
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">NASCAR</div>
-                        </div>
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">GT</div>
-                        </div>
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">motogp</div>
-                        </div>
-                        <div class="tM-menu-linkButton">
-                            <div class="tM-menu-linkButton-rotate_1"></div>
-                            <div class="tM-menu-linkButton-rotate_2"></div>
-                            <div class="tM-menu-linkButton-content">kontakt</div>
-                        </div>
+                <div class="product-slider-visibleArea">
+                    <div class="product-slider-hanger">
+                        <!--<div class="pdc-sld-item-body"></div>-->
                     </div>
                 </div>
-                <div class="topMenu-dpd-box">
-                    <div class="tM-menu-button-hanger">
-                        <div class="tM-menu-button">
-                            <div class="tM-menu-button-rotate_1"></div>
-                            <div class="tM-menu-button-rotate_2"></div>
-                            <div class="tM-menu-button-content">
-                                <div class="tM-menu-cross-1"></div>
-                                <div class="tM-menu-cross-2"></div>
-                                <div class="tM-menu-cross-3"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>   <!--<<<_MOBILE-->
-            <div class="bgBox-desktop-content">   <!--DESKTOP_>>>-->
-                <div class="bgBC-desktop-content-topTitle">racetop</div>
-                <div class="bgBC-desktop-content-topSubTitleInfo">Topowy serwis informacyjny o wyścigach</div>
-                <div class="bgBC-desktop-arrow-box-handler">
-                    <div class="bgBC-desktop-arrow-proper bgBC-aWpr-0">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </div>
-                    <div class="bgBC-desktop-arrow-proper bgBC-aWpr-1">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </div>
-                    <div class="bgBC-desktop-arrow-proper bgBC-aWpr-2">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </div>
-                </div>
-            </div>   <!--<<<_DESKTOP-->
-            <div class="bgBox-leftMenu">   <!--DESKTOP_>>>-->
-                <div class="leftMenu-logo-box">
-                    <div class="leftMenu-logo-dim">
-                        <div class="leftMenu-logo-absPoser">
-                            <img class="leftMenu-logo-img" src="images/race-car-309123_640.png" />
-                        </div>
-                    </div>
-                    <div class="leftMenu-pageTitle-handler">
-                        <div class="leftMenu-pageTitle-absPoser">
-                            <div class="leftMenu-pageTitle">racetop</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="leftMenu-title-box">
-                    <div class="lM-menu-title">menu</div>
-                    <div class="lM-menu-linkButtons-group">
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">wiadomości</div>
-                        </div>
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">formuła&nbsp;1</div>
-                        </div>
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">indycar</div>
-                        </div>
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">NASCAR</div>
-                        </div>
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">GT</div>
-                        </div>
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">motogp</div>
-                        </div>
-                        <div class="lM-menu-linkButton">
-                            <div class="lM-menu-linkButton-rotate_1"></div>
-                            <div class="lM-menu-linkButton-rotate_2"></div>
-                            <div class="lM-menu-linkButton-content">kontakt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="leftMenu-dpd-box">
-                    <div class="lM-menu-button-hanger">
-                        <div class="lM-menu-button">
-                            <div class="lM-menu-button-rotate_1"></div>
-                            <div class="lM-menu-button-rotate_2"></div>
-                            <div class="lM-menu-button-content">
-                                <div class="lM-menu-cross-1"></div>
-                                <div class="lM-menu-cross-2"></div>
-                                <div class="lM-menu-cross-3"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>   <!--<<<_DESKTOP-->
+            </div>
         </div>
 
-        <div class="content-block">
-            <div class="bgBox-mobile-content">   <!--MOBILE_>>>-->
-                <div class="before-ContentInfo-space">
-                    <div class="before-ContentInfo-space-prp"></div>
-                </div>
-                <div class="contentInfo-mobile-box">
-                    <div class="contentInfo-mobile-text-box">
-                        <div class="contentInfo-mobile-text-box-proper">Jesteśmy profesjonalnym serwisem informacyjnym</div>
-                        <div class="contentInfo-mobile-text-box-proper">Z nami nie ominie cię żadne wydarzenie</div>
-                    </div>
-                </div>
-                <div class="category-mobile-group-box">
-                    <div class="cat-mobile-box">
-                        <div class="cat-mobile-title">wiadomości</div>
-                        <a class="cat-mobile-link-field">
-                            <div class="cat-mobile-img-box">
-                                <div class="cat-mobile-img-proper cat-img-1"></div>
-                            </div>
-                            <div class="cat-mobile-description">
-                                Zobacz garść najnowszych wiadomości ze świata wyścigów
-                                już teraz
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-mobile-box">
-                        <div class="cat-mobile-title">formuła&nbsp;1</div>
-                        <a class="cat-mobile-link-field">
-                            <div class="cat-mobile-img-box">
-                                <div class="cat-mobile-img-proper cat-img-2"></div>
-                            </div>
-                            <div class="cat-mobile-description">
-                                Odkryj potęgę najbardziej prestiżowych 
-                                wyścigów samochodowych
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-mobile-box">
-                        <div class="cat-mobile-title">indycar</div>
-                        <a class="cat-mobile-link-field">
-                            <div class="cat-mobile-img-box">
-                                <div class="cat-mobile-img-proper cat-img-3"></div>
-                            </div>
-                            <div class="cat-mobile-description">
-                                Zanurz się w serię wyścigów IndyCar i posmakuj 
-                                szaleństwa jakiego jeszcze nie było
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-mobile-box">
-                        <div class="cat-mobile-title">nascar</div>
-                        <a class="cat-mobile-link-field">
-                            <div class="cat-mobile-img-box">
-                                <div class="cat-mobile-img-proper cat-img-4"></div>
-                            </div>
-                            <div class="cat-mobile-description">
-                                NASCAR - jedna z największych organizacji wyścigowych 
-                                na świecie
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-mobile-box">
-                        <div class="cat-mobile-title">gt</div>
-                        <a class="cat-mobile-link-field">
-                            <div class="cat-mobile-img-box">
-                                <div class="cat-mobile-img-proper cat-img-5"></div>
-                            </div>
-                            <div class="cat-mobile-description">
-                                Wyścigi samochodów sportowych o wysokich osiągach dla
-                                prawdziwych twardzieli
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-mobile-box">
-                        <div class="cat-mobile-title">motogp</div>
-                        <a class="cat-mobile-link-field">
-                            <div class="cat-mobile-img-box">
-                                <div class="cat-mobile-img-proper cat-img-6"></div>
-                            </div>
-                            <div class="cat-mobile-description">
-                                MotoGP - czyli Motocyklowe mistrzostwa świata dla 
-                                prawdziwych kaskaderów
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="contentInfo-mobile-box">
-                    <div class="contentInfo-mobile-text-box">
-                        <div class="contentInfo-mobile-text-box-proper">Jest masa rzeczy, które chcemy ci pokazać</div>
-                        <div class="contentInfo-mobile-text-box-proper">Zobacz teraz najciekawsze z nich</div>
-                    </div>
-                </div>
-                <div class="msl-background">
-                    <div class="masonry-layout-box-mobile">
-                    </div>
-                </div>
-                <div class="contact-mobile-box">
-                    <div class="contact-mobile-box-proper">
-                        <div class="once-contact-mobile-locality-dim">
-                            <div class="once-contact-mobile-locality-prp oclp-1"></div>
-                            <div class="once-contact-mobile-tit">warszawa</div>
-                            <div class="once-contact-mobile-desc">
-                                <div class="once-contact-mobile-threeGroup">
-                                    <div class="once-contact-mobile-desc-company">Racetop sp. z o.o.</div>
-                                    <div class="once-contact-mobile-desc-location">ul. Wyścigowa 23, 02-595 Warszawa</div>
-                                    <div class="once-contact-mobile-desc-phone">tel. 34 953 99 09</div>
-                                </div>
-                                <div class="once-contact-mobile-desc-email">biuro@racetop.com</div>
-                            </div>
-                        </div>
-                        <div class="once-contact-mobile-space"></div>
-                        <div class="once-contact-mobile-locality-dim">
-                            <div class="once-contact-mobile-locality-prp oclp-2"></div>
-                            <div class="once-contact-mobile-tit">kraków</div>
-                            <div class="once-contact-mobile-desc">
-                                <div class="once-contact-mobile-threeGroup">
-                                    <div class="once-contact-mobile-desc-company">Racetop sp. z o.o.</div>
-                                    <div class="once-contact-mobile-desc-location">ul. Zawodowa 49A/3, 30-327 Kraków</div>
-                                    <div class="once-contact-mobile-desc-phone">tel. 34 953 34 55</div>
-                                </div>
-                                <div class="once-contact-mobile-desc-email">biuro@racetop.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <footer class="footer-box">
-                    <div class="footer-box-proper">
-                        <div class="footer-icons"></div>
-                        <div class="footer-mobile-copyright">Copyright &copy; Racetop</div>
-                    </div>
-                </footer>
-            </div>   <!--<<<_MOBILE-->
-            <div class="bgBox-desktop-content">   <!--DESKTOP_>>>-->
-                <div class="category-desktop-group-box">
-                    <div class="slide-desktop-box">   <!--Zrób z tego inną klasę-->
-                        <div class="slide-desktop-text-box">
-                            <div class="slide-text-box-proper">Jesteśmy profesjonalnym serwisem informacyjnym</div>
-                            <div class="slide-text-box-proper">Z nami nie ominie cię żadne wydarzenie</div>
-                        </div>
-                        <div class="slide-desktop-img-box">
-                            <div class="slide-desktop-img-proper sldImg-1"></div>
-                        </div>
-                    </div>
-                    <div class="cat-desktop-box">
-                        <div class="cat-deskB-img-box cdbib-rgt">
-                            <div class="cat-deskB-img-proper cdBip-1"></div>
-                        </div>
-                        <div class="cat-desktop-box-text-group cdbib-lft">
-                            <div class="cat-deskB-tit-box">
-                                <div class="cat-deskB-tit-proper">Wiadomości</div>
-                            </div>
-                            <div class="cat-deskB-desc-box">
-                                <div class="cat-deskB-desc-proper">
-                                    Zobacz garść najnowszych wiadomości ze świata wyścigów
-                                    już teraz
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cat-desktop-box">
-                        <div class="cat-desktop-box-text-group cdbib-rgt">
-                            <div class="cat-deskB-tit-box">
-                                <div class="cat-deskB-tit-proper">Formuła 1</div>
-                            </div>
-                            <div class="cat-deskB-desc-box">
-                                <div class="cat-deskB-desc-proper">
-                                    Odkryj potęgę najbardziej prestiżowych 
-                                    wyścigów samochodowych w dziejach ludzkości
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cat-deskB-img-box cdbib-lft">
-                            <div class="cat-deskB-img-proper cdBip-2"></div>
-                        </div>
-                    </div>
-                    <div class="cat-desktop-box">
-                        <div class="cat-deskB-img-box cdbib-rgt">
-                            <div class="cat-deskB-img-proper cdBip-3"></div>
-                        </div>
-                        <div class="cat-desktop-box-text-group cdbib-lft">
-                            <div class="cat-deskB-tit-box">
-                                <div class="cat-deskB-tit-proper">INDYCAR</div>
-                            </div>
-                            <div class="cat-deskB-desc-box">
-                                <div class="cat-deskB-desc-proper">
-                                    Zanurz się w serię wyścigów IndyCar i posmakuj 
-                                    szaleństwa jakiego jeszcze nie było
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cat-desktop-box">
-                        <div class="cat-desktop-box-text-group cdbib-rgt">
-                             <div class="cat-deskB-tit-box">
-                                <div class="cat-deskB-tit-proper">NASCAR</div>
-                            </div>
-                            <div class="cat-deskB-desc-box">
-                                <div class="cat-deskB-desc-proper">
-                                    NASCAR - jedna z największych organizacji wyścigowych 
-                                    na świecie czeka na prawdziwych miłośników maratonów
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cat-deskB-img-box cdbib-lft">
-                            <div class="cat-deskB-img-proper cdBip-4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cat-desktop-box">
-                        <div class="cat-deskB-img-box cdbib-rgt">
-                            <div class="cat-deskB-img-proper cdBip-5"></div>
-                        </div>
-                        <div class="cat-desktop-box-text-group cdbib-lft">
-                            <div class="cat-deskB-tit-box">
-                                <div class="cat-deskB-tit-proper">GT</div>
-                            </div>
-                            <div class="cat-deskB-desc-box">
-                                <div class="cat-deskB-desc-proper">
-                                    Wyścigi samochodów sportowych o wysokich osiągach dla
-                                    prawdziwych twardzieli
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cat-desktop-box">
-                        <div class="cat-desktop-box-text-group cdbib-rgt">
-                            <div class="cat-deskB-tit-box">
-                                <div class="cat-deskB-tit-proper">MOTOGP</div>
-                            </div>
-                            <div class="cat-deskB-desc-box">
-                                <div class="cat-deskB-desc-proper">
-                                    MotoGP - czyli Motocyklowe mistrzostwa świata dla 
-                                    prawdziwych kaskaderów
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cat-deskB-img-box cdbib-lft">
-                            <div class="cat-deskB-img-proper cdBip-6"></div>
-                        </div>
-                    </div>
-                    <div class="slide-desktop-box">   <!--Zrób z tego inną klasę-->
-                        <div class="slide-desktop-img-box">
-                            <div class="slide-desktop-img-proper sldImg-2"></div>
-                        </div>
-                        <div class="slide-desktop-text-box">
-                            <div class="slide-text-box-proper">Jest masa rzeczy, które chcemy ci pokazać</div>
-                            <div class="slide-text-box-proper">Zobacz teraz najciekawsze z nich</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="masonry-layout-box-desktop">
-                </div>
-                <div class="contact-desktop-box">
-                    <div class="contact-desktop-box-proper">
-                        <div class="once-contact-desktop-locality-dim">
-                            <div class="once-contact-desktop-locality-prp oclp-1"></div>
-                            <div class="once-contact-desktop-tit">warszawa</div>
-                            
-                            <div class="once-contact-desktop-text-content">
-                                <div class="once-contact-desktop-desc">
-                                    <div class="once-contact-desktop-threeGroup">
-                                        <div class="once-contact-desktop-desc-company">Racetop sp. z o.o.</div>
-                                        <div class="once-contact-desktop-desc-location">ul. Wyścigowa 23, 02-595 Warszawa</div>
-                                        <div class="once-contact-desktop-desc-phone">tel. 34 953 99 09</div>
-                                    </div>
-                                    <div class="once-contact-desktop-desc-email">biuro@racetop.com</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="once-contact-desktop-space"></div>
-                        <div class="once-contact-desktop-locality-dim">
-                            <div class="once-contact-desktop-locality-prp oclp-2"></div>
-                            <div class="once-contact-desktop-tit">kraków</div>
-                            
-                            <div class="once-contact-desktop-text-content">
-                                <div class="once-contact-desktop-desc">
-                                    <div class="once-contact-desktop-threeGroup">
-                                        <div class="once-contact-desktop-desc-company">Racetop sp. z o.o.</div>
-                                        <div class="once-contact-desktop-desc-location">ul. Zawodowa 49A/3, 30-327 Kraków</div>
-                                        <div class="once-contact-desktop-desc-phone">tel. 34 953 34 55</div>
-                                    </div>
-                                    <div class="once-contact-desktop-desc-email">biuro@racetop.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <footer class="footer-box">
-                    <div class="footer-box-proper">
-                        <div class="footer-icons"></div>
-                        <div class="footer-desktop-copyright">Copyright &copy; Racetop</div>
-                    </div>
-                </footer>
-            </div>   <!--<<<_DESKTOP-->
-        </div>
-
-        <div class="transp-block">
-            <div class="bgBox-mobile-content">   <!--MOBILE_>>>-->
-            </div>   <!--<<<_MOBILE-->
-            <div class="bgBox-desktop-content">   <!--DESKTOP_>>>-->
-            </div>   <!--<<<_DESKTOP-->
-        </div>
-
-        <script src="data.js"></script>
-        <script src="racetop.js"></script>
-    </body>
+    </div>
+    <script src="housebay.js"></script>
+</body>
 </html>
