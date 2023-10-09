@@ -1,6 +1,18 @@
 'use strict'
 
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {   // IN WORK
+        //let one: HTMLElement = document.getElementById('splash-screen');
+        //let two: HTMLDivElement = document.querySelector('div.window-block');
+        //one.style.display = 'none';
+        //two.style.display = 'flex';
+    }, 800);
+}, false);
+
+
+
 const pageUp = {
     pageUpFunc() {
         window.addEventListener('load', () => {
@@ -9,6 +21,7 @@ const pageUp = {
     }
 };
 pageUp.pageUpFunc();
+
 
 
 const toGlobalData_Obj = {
@@ -946,9 +959,6 @@ const desktop_SlideAnimations = {
                             img_Desktop_box[i].style.left = finalyVal + 'px';
                         }
                         //this.slideImg_Array[i].style.right = finalyVal + 'px';
-
-
-
                     } else {}
                 };
             }, false);
@@ -1107,8 +1117,7 @@ const masonryLayout_Obj = {
                     mslEl_BodyBorder.appendChild(mslEL_Desc);
                     mslEL_Body.appendChild(mslEl_BodyBorder);
                     mslEl_Target.appendChild(mslEL_Body);
-                }
-                else {}
+                } else {}
             }
         } else if (toGlobalData_Obj.webRWD_Val_Current >= toGlobalData_Obj.webRWD_Val_Target) {
             let topNewsAmount = content_Database.cD_Title.length;
