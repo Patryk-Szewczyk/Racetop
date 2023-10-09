@@ -17,6 +17,22 @@ body {
     padding: 0px;
 }
 
+#splash-screen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rowdies', cursive;
+    font-size: 300%;   /*OLD:140%*/
+    text-transform: uppercase;
+    z-index: 20;
+}
+
 @media only screen and (min-width: 0px) {
     .background-box {
         width: 100%;
